@@ -18,8 +18,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["work sans"],
+        fonts: ["work sans:300,400,500,700"],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
     "gatsby-plugin-sharp",

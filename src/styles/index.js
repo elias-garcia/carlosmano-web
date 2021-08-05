@@ -4,7 +4,13 @@ export const useIndexStyles = createUseStyles(() => ({
   "@global": {
     body: {
       fontFamily: "Work Sans",
-      fontSize: 18,
+      fontSize: 17,
+    },
+    ".glightbox-open .glightbox-header-fix": {
+      marginRight: 15,
+    },
+    ".gslide-description": {
+      display: "none",
     },
   },
 }));

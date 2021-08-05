@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 
 export const useFooterStyles = createUseStyles((theme) => ({
-  footer: {
+  footerContent: {
     display: "flex",
     justifyContent: "center",
   },

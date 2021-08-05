@@ -8,10 +8,19 @@ const theme = {
   spacing: 8,
   palette: {
     primary: {
-      main: "#3a3a3a",
-      dark: "#000",
+      main: "#bd9a74",
     },
+    black: "#25201d",
+    white: "#fff",
   },
+  breakpoints: {
+    sm: "@media (min-width: 576px)",
+    md: "@media (min-width: 768px)",
+    lg: "@media (min-width: 992px)",
+    xl: "@media (min-width: 1200px)",
+    xxl: "@media (min-width: 1400px)",
+  },
+  headerHeight: 80,
 };
 
 module.exports = {

@@ -1,5 +1,6 @@
 import React from "react";
 import "normalize.css";
+import "glightbox/dist/css/glightbox.css";
 
 import { Layout } from "./src/components/core/layout/layout.component";
 import { useIndexStyles } from "./src/styles/index";
