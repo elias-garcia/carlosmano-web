@@ -11,5 +11,7 @@ export const useLayoutStyles = createUseStyles((theme) => ({
   main: {
     marginTop: theme.headerHeight,
     flex: "1 0 auto",
+    paddingTop: theme.spacing * 4,
+    paddingBottom: theme.spacing * 5,
   },
 }));

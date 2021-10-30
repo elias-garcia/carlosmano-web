@@ -8,27 +8,27 @@ exports.createPages = ({ actions }) => {
   const workRoutes = [
     {
       name: "paintings",
-      path: "/paintings",
-    },
-    {
-      name: "drawings",
-      path: "/drawings",
+      path: "/obra/pintura",
     },
     {
       name: "etchings",
-      path: "/etchings",
+      path: "/obra/grabados",
+    },
+    {
+      name: "drawings",
+      path: "/obra/dibujos",
     },
   ];
 
   createPage({
-    path: `/work`,
+    path: `/obra`,
     component: workComponentPath,
     context: { imagesPathRegex: "/work/" },
   });
 
   workRoutes.forEach((child) => {
     createPage({
-      path: `/work/${child.name}`,
+      path: child.path,
       component: workComponentPath,
       context: { imagesPathRegex: `/${child.name}/` },
     });

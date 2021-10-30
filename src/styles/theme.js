@@ -7,11 +7,10 @@ const theme = {
   },
   spacing: 8,
   palette: {
-    primary: {
-      main: "#bd9a74",
-    },
     black: "#25201d",
     white: "#fff",
+    grey: "#f7f7f7",
+    darkGrey: "#828282",
   },
   breakpoints: {
     sm: "@media (min-width: 576px)",

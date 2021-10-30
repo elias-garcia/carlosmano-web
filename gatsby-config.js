@@ -3,6 +3,7 @@ const { theme } = require("./src/styles/theme.js");
 module.exports = {
   siteMetadata: {
     title: "Carlos Maño",
+    siteUrl: `https://carlosmano.com`,
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

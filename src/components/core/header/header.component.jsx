@@ -24,7 +24,7 @@ export const Header = () => {
                     to={route.path}
                     partiallyActive={route.name === "work"}
                   >
-                    {route.name}
+                    {route.label}
                   </Link>
                 </li>
               ))}

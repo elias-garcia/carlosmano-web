@@ -9,7 +9,7 @@ export const MobileMenu = () => {
         <ul>
           {routes.map((route) => (
             <li>
-              <Link to={route.path}>{route.name}</Link>
+              <Link to={route.path}>{route.label}</Link>
             </li>
           ))}
         </ul>

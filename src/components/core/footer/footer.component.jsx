@@ -7,10 +7,10 @@ export const Footer = () => {
   const classes = useFooterStyles();
 
   return (
-    <footer>
+    <footer className={classes.footerWrapper}>
       <Container>
         <div className={classes.footerContent}>
-          <p>© Carlos Maño - 2020</p>
+          <p className={classes.copyright}>© Carlos Maño - 2021</p>
         </div>
       </Container>
     </footer>

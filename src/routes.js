@@ -1,32 +1,39 @@
 export const routes = [
   {
     name: "home",
+    label: "Inicio",
     path: "/",
   },
   {
     name: "about",
-    path: "/about",
+    label: "Sobre mí",
+    path: "/sobre-mi",
   },
   {
     name: "work",
-    path: "/work",
+    label: "Obra",
+    path: "/obra",
     children: [
       {
         name: "paintings",
-        path: "/work/paintings",
+        label: "Pintura",
+        path: "/obra/pintura",
       },
       {
         name: "etchings",
-        path: "/work/etchings",
+        label: "Grabados",
+        path: "/obra/grabados",
       },
       {
         name: "drawings",
-        path: "/work/drawings",
+        label: "Dibujos",
+        path: "/obra/dibujos",
       },
     ],
   },
   {
     name: "contact",
-    path: "/contact",
+    label: "Contacto",
+    path: "/contacto",
   },
 ];

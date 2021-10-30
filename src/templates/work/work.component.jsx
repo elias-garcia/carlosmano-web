@@ -1,19 +1,32 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import clsx from "clsx";
 
 import { Gallery } from "../../components/shared/gallery/gallery.component";
 import { routes } from "../../routes";
+import useWorkStyles from "./work.styles";
 
 export default function Work({ data }) {
-  const workRoutes = routes.find((route) => route.name === "work");
+  const classes = useWorkStyles();
+  const workRoute = routes.find((route) => route.name === "work");
+  const allWorkRoutes = [
+    { ...workRoute, label: "Todo" },
+    ...workRoute.children,
+  ];
 
   return (
     <div>
-      <nav>
-        <ul>
-          {workRoutes.children.map((route) => (
-            <li>
-              <Link to={route.path}>{route.name}</Link>
+      <nav className={classes.filtersWrapper}>
+        <ul className={classes.filters}>
+          {allWorkRoutes.map((route) => (
+            <li
+              key={route.name}
+              className={clsx({
+                [classes.filter]: true,
+                [classes.activeFilter]: route.path === window.location.pathname,
+              })}
+            >
+              <Link to={route.path}>{route.label}</Link>
             </li>
           ))}
         </ul>

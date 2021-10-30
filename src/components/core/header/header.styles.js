@@ -44,9 +44,9 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     padding: `${theme.spacing}px ${theme.spacing * 2}px`,
     textTransform: "capitalize",
     textDecoration: "none",
-    color: "inherit",
+    color: theme.palette.darkGrey,
   },
   routeLinkActive: {
-    color: theme.palette.primary.main,
+    color: theme.palette.black,
   },
 }));
