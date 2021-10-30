@@ -6,9 +6,6 @@ export const useIndexStyles = createUseStyles(() => ({
       fontFamily: "Work Sans",
       fontSize: 17,
     },
-    ".glightbox-open .glightbox-header-fix": {
-      marginRight: 15,
-    },
     ".gslide-description": {
       display: "none",
     },

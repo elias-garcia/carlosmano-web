@@ -10,7 +10,7 @@ export const Header = () => {
   const classes = useHeaderStyles();
 
   return (
-    <header className={`${classes.header} glightbox-header-fix`}>
+    <header className={classes.header}>
       <Container>
         <div className={classes.headerContent}>
           <h1 className={classes.logo}>Carlos Maño</h1>
