@@ -1,10 +1,13 @@
 import * as React from "react";
 
+import SEO from "../components/shared/seo/seo.component";
+
 const IndexPage = () => {
   return (
-    <div>
-      <p>Index page</p>
-    </div>
+    <>
+      <SEO />
+      <p>Inicio</p>
+    </>
   );
 };
 

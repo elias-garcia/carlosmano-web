@@ -1,10 +1,15 @@
 import React from "react";
 
+import SEO from "../components/shared/seo/seo.component";
+
 const Contacto = () => {
   return (
-    <div>
-      <p>Contacto</p>
-    </div>
+    <>
+      <SEO title="Contacto" />
+      <div>
+        <p>Contacto</p>
+      </div>
+    </>
   );
 };
 

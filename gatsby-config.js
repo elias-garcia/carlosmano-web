@@ -3,7 +3,10 @@ const { theme } = require("./src/styles/theme.js");
 module.exports = {
   siteMetadata: {
     title: "Carlos Maño",
+    defaultTitle: "Carlos Maño",
+    titleTemplate: "Carlos Maño | %s",
     siteUrl: `https://carlosmano.com`,
+    description: "Página web del artista gallego Carlos Maño",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
