@@ -4,9 +4,17 @@ export const useGalleryStyles = createUseStyles((theme) => ({
   gallery: {
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    gridTemplateColumns: "1fr 1fr",
     gridAutoRows: "1fr",
-    gap: theme.spacing * 5,
+    gap: theme.spacing * 3,
+    [theme.breakpoints.sm]: {
+      gridTemplateColumns: "1fr 1fr 1fr",
+      gap: theme.spacing * 4,
+    },
+    [theme.breakpoints.lg]: {
+      gridTemplateColumns: "1fr 1fr 1fr 1fr",
+      gap: theme.spacing * 5,
+    },
   },
   galleryItem: {
     position: "relative",

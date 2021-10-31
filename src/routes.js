@@ -1,15 +1,5 @@
 export const routes = [
   {
-    name: "home",
-    label: "Inicio",
-    path: "/",
-  },
-  {
-    name: "about",
-    label: "Sobre mí",
-    path: "/sobre-mi",
-  },
-  {
     name: "work",
     label: "Obra",
     path: "/obra",
@@ -30,6 +20,11 @@ export const routes = [
         path: "/obra/dibujos",
       },
     ],
+  },
+  {
+    name: "bio",
+    label: "Biografía",
+    path: "/biografia",
   },
   {
     name: "contact",

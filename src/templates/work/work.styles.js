@@ -8,19 +8,22 @@ const useWorkStyles = createUseStyles((theme) => ({
     display: "flex",
     listStyle: "none",
     paddingLeft: 0,
-    marginTop: 0,
+    margin: 0,
   },
   filter: {
     display: "flex",
     textTransform: "capitalize",
     color: theme.palette.darkGrey,
-    "& :not(:first-of-type)": {
+    "&:not(:first-of-type)": {
       marginLeft: theme.spacing * 2,
     },
     "& a": {
       color: "inherit",
       textDecoration: "none",
       padding: `${theme.spacing}px ${theme.spacing * 1.5}px`,
+      "&:hover": {
+        color: theme.palette.black,
+      },
     },
   },
   activeFilter: {

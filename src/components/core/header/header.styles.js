@@ -2,6 +2,7 @@ import { createUseStyles } from "react-jss";
 
 export const useHeaderStyles = createUseStyles((theme) => ({
   header: {
+    display: "flex",
     background: theme.palette.white,
     color: theme.palette.black,
     position: "fixed",
@@ -14,21 +15,19 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: `${theme.spacing * 3}px 0`,
   },
   logo: {
+    fontSize: 28,
     fontWeight: theme.fontWeights.medium,
     margin: 0,
-  },
-  mobileMenuIcon: {
-    display: "block",
-    [theme.breakpoints.md]: {
-      display: "none",
+    "& a": {
+      textDecoration: "none",
+      color: "inherit",
     },
   },
   routesContainer: {
     display: "none",
-    [theme.breakpoints.md]: {
+    [theme.breakpoints.sm]: {
       display: "block",
     },
   },
@@ -36,6 +35,7 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     display: "flex",
     listStyle: "none",
     margin: 0,
+    padding: 0,
   },
   route: {
     display: "flex",
@@ -45,8 +45,29 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     textTransform: "capitalize",
     textDecoration: "none",
     color: theme.palette.darkGrey,
+    "&:hover": {
+      color: theme.palette.black,
+    },
   },
   routeLinkActive: {
     color: theme.palette.black,
+  },
+  mobileMenuButton: {
+    display: "flex",
+    appearance: "none",
+    border: 0,
+    padding: theme.spacing,
+    background: "transparent",
+    cursor: "pointer",
+    [theme.breakpoints.sm]: {
+      display: "none",
+    },
+  },
+  mobileMenu: {
+    position: "fixed",
+    width: "100%",
+    marginTop: theme.headerHeight,
+    background: theme.palette.white,
+    zIndex: 1,
   },
 }));
