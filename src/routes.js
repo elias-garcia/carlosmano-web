@@ -14,18 +14,18 @@ export const routes = [
         label: "Grabados",
         path: "/obra/grabados",
       },
-      {
-        name: "drawings",
-        label: "Dibujos",
-        path: "/obra/dibujos",
-      },
+      // {
+      //   name: "drawings",
+      //   label: "Dibujos",
+      //   path: "/obra/dibujos",
+      // },
     ],
   },
-  {
-    name: "bio",
-    label: "Biografía",
-    path: "/biografia",
-  },
+  // {
+  //   name: "bio",
+  //   label: "Biografía",
+  //   path: "/biografia",
+  // },
   {
     name: "contact",
     label: "Contacto",

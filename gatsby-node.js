@@ -14,10 +14,10 @@ exports.createPages = ({ actions }) => {
       name: "etchings",
       path: "/obra/grabados",
     },
-    {
-      name: "drawings",
-      path: "/obra/dibujos",
-    },
+    // {
+    //   name: "drawings",
+    //   path: "/obra/dibujos",
+    // },
   ];
 
   createPage({
