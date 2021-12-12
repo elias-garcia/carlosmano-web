@@ -19,7 +19,7 @@ const theme = {
     xl: "@media (min-width: 1200px)",
     xxl: "@media (min-width: 1400px)",
   },
-  headerHeight: 80,
+  headerHeight: 100,
 };
 
 module.exports = {

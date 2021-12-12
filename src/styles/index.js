@@ -1,6 +1,6 @@
 import { createUseStyles } from "react-jss";
 
-export const useIndexStyles = createUseStyles(() => ({
+export const useIndexStyles = createUseStyles({
   "@global": {
     body: {
       fontFamily: "Inter",
@@ -10,4 +10,4 @@ export const useIndexStyles = createUseStyles(() => ({
       display: "none",
     },
   },
-}));
+});
