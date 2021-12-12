@@ -11,7 +11,7 @@ export const Gallery = ({ images }) => {
     .map((image) => {
       const src = image.node.publicURL;
       const img = getImage(image.node);
-      const title = image.node.name.replace("/_/g", " ");
+      const title = image.node.name.replace(/_/g, " ");
       const year = image.node.dir.substr(image.node.dir.lastIndexOf("/") + 1);
 
       return { src, img, title, year };
