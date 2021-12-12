@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
     <div className={classes.imageContainer}>
       <StaticImage
-        src="../images/hero.jpg"
+        src="../../../images/hero.jpg"
         alt="Cuadro de portada"
         loading="eager"
         placeholder="none"

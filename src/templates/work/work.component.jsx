@@ -27,6 +27,7 @@ export default function Work({ data }) {
                 className={clsx({
                   [classes.filter]: true,
                   [classes.activeFilter]:
+                    typeof window !== "undefined" &&
                     route.path === window.location.pathname,
                 })}
               >
