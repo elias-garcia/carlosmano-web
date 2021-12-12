@@ -2,10 +2,13 @@
   "name": "carlosmano-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Carlos Maño",
-  "author": "Elias",
+  "description": "Webpage of the spanish artist Carlos Maño",
+  "author": "elias-garcia",
   "keywords": [
-    "gatsby"
+    "carlos",
+    "maño",
+    "artist",
+    "webpage"
   ],
   "scripts": {
     "develop": "gatsby develop",
