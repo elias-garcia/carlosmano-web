@@ -1,9 +1,9 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 import { useHeroStyles } from "./hero.styles";
 import ArrowRightIcon from "../../../images/icons/arrow-right.svg";
-import { Link } from "gatsby";
 
 export const Hero = () => {
   const classes = useHeroStyles();

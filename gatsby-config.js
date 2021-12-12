@@ -9,7 +9,6 @@ module.exports = {
     description: "Página web del artista gallego Carlos Maño",
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -17,7 +16,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
-        backgroundColor: theme.palette.white,
+        background_color: theme.palette.white,
         theme_color: theme.palette.black,
       },
     },

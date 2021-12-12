@@ -1,8 +1,8 @@
 import React from "react";
+import { getImage } from "gatsby-plugin-image";
 
 import { useGalleryStyles } from "./gallery.styles";
 import { GalleryImage } from "../gallery-image/gallery-image.component";
-import { getImage } from "gatsby-plugin-image";
 
 export const Gallery = ({ images }) => {
   const classes = useGalleryStyles();

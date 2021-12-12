@@ -9,12 +9,12 @@ export const Layout = ({ children }) => {
   const classes = useLayoutStyles();
 
   return (
-    <div className={classes.layout}>
+    <section className={classes.layout}>
       <Header />
       <main className={classes.main}>
         <Container>{children}</Container>
       </main>
       <Footer />
-    </div>
+    </section>
   );
 };
