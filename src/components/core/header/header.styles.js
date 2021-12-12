@@ -9,7 +9,7 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     left: 0,
     right: 0,
     zIndex: 1,
-    height: theme.headerHeight,
+    height: theme.headerHeightSm,
   },
   headerContent: {
     display: "flex",
@@ -68,8 +68,16 @@ export const useHeaderStyles = createUseStyles((theme) => ({
   mobileMenu: {
     position: "fixed",
     width: "100%",
-    marginTop: theme.headerHeight,
+    marginTop: theme.headerHeightSm,
     background: theme.palette.white,
     zIndex: 1,
+  },
+  [theme.breakpoints.sm]: {
+    header: {
+      height: theme.headerHeight,
+    },
+    mobileMenu: {
+      marginTop: theme.headerHeight,
+    },
   },
 }));

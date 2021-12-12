@@ -17,6 +17,8 @@ const useMobileMenuStyles = createUseStyles((theme) => ({
     },
   },
   routeLink: {
+    fontSize: theme.spacing * 2.25,
+    fontWeight: theme.fontWeights.medium,
     textDecoration: "none",
     color: theme.palette.darkGrey,
     padding: `${theme.spacing * 1.5}px 0`,

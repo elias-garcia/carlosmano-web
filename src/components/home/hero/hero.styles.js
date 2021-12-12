@@ -2,6 +2,7 @@ import { createUseStyles } from "react-jss";
 
 export const useHeroStyles = createUseStyles((theme) => ({
   imageContainer: {
+    marginTop: theme.spacing * 2,
     position: "relative",
     width: "100%",
     display: "flex",
@@ -35,7 +36,7 @@ export const useHeroStyles = createUseStyles((theme) => ({
     textDecoration: "none",
     border: `${theme.spacing * 0.5}px solid ${theme.palette.white}`,
     borderRadius: theme.spacing * 0.5,
-    padding: `${theme.spacing * 1.75}px ${theme.spacing * 3}px`,
+    padding: `${theme.spacing * 1}px ${theme.spacing * 1.5}px`,
     color: theme.palette.white,
     background: "transparent",
     cursor: "pointer",
@@ -47,11 +48,26 @@ export const useHeroStyles = createUseStyles((theme) => ({
   },
   buttonText: {
     margin: 0,
-    fontSize: theme.spacing * 2.5,
+    fontSize: theme.spacing * 2.25,
     fontWeight: theme.fontWeights.medium,
   },
   arrowRightIcon: {
-    height: theme.spacing * 3,
-    marginLeft: theme.spacing * 2.5,
+    height: theme.spacing * 2.25,
+    marginLeft: theme.spacing * 1.75,
+  },
+  [theme.breakpoints.sm]: {
+    imageContainer: {
+      paddingTop: 0,
+    },
+    button: {
+      padding: `${theme.spacing * 1.75}px ${theme.spacing * 3}px`,
+    },
+    buttonText: {
+      fontSize: theme.spacing * 2.5,
+    },
+    arrowRightIcon: {
+      height: theme.spacing * 2.5,
+      marginLeft: theme.spacing * 2.5,
+    },
   },
 }));

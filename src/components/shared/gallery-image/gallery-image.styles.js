@@ -43,7 +43,7 @@ export const useGalleryImageStyles = createUseStyles((theme) => ({
     padding: `0 ${theme.spacing * 2}px`,
   },
   title: {
-    fontSize: theme.spacing * 3,
+    fontSize: theme.spacing * 2.25,
     fontWeight: theme.fontWeights.medium,
     lineHeight: 1.4,
     textTransform: "uppercase",
@@ -53,5 +53,10 @@ export const useGalleryImageStyles = createUseStyles((theme) => ({
   subtitle: {
     margin: 0,
     fontWeight: theme.fontWeights.light,
+  },
+  [theme.breakpoints.sm]: {
+    title: {
+      fontSize: theme.spacing * 2.5,
+    },
   },
 }));
