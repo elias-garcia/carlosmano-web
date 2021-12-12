@@ -49,6 +49,9 @@ export const query = graphql`
           dir
           name
           publicURL
+          childImageSharp {
+            gatsbyImageData(width: 300, placeholder: BLURRED)
+          }
         }
       }
     }

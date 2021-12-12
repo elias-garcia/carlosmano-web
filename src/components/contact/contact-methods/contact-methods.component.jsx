@@ -24,8 +24,6 @@ export const ContactMethods = () => {
         <EnvelopeIcon className={classes.contactMethodIcon} />
         <a
           href="mailto:carlosmano@carlosmano.com"
-          target="_blank"
-          rel="noopener noreferrer"
           className={classes.contactMethodLink}
         >
           carlosmano@carlosmano.com

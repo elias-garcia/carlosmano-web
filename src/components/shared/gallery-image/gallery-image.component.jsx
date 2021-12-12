@@ -1,8 +1,9 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { useGalleryImageStyles } from "./gallery-image.styles";
 
-export const GalleryImage = ({ src, title, year, onView }) => {
+export const GalleryImage = ({ img, src, title, year, onView }) => {
   const classes = useGalleryImageStyles();
 
   return (
@@ -12,7 +13,9 @@ export const GalleryImage = ({ src, title, year, onView }) => {
       tabIndex="0"
       onClick={onView}
     >
-      <img className={`glightbox ${classes.image}`} src={src} alt={title} />
+      <a href={src} className="glightbox">
+        <GatsbyImage image={img} alt={title} className={classes.image} />
+      </a>
       <div className={classes.imageOverlay}>
         <div className={classes.info}>
           <p className={classes.title}>{title}</p>

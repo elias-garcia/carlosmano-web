@@ -18,6 +18,7 @@ export const useGalleryImageStyles = createUseStyles((theme) => ({
   },
   image: {
     width: "100%",
+    height: "100%",
     objectFit: "cover",
     transition: "transform 0.2s ease",
   },

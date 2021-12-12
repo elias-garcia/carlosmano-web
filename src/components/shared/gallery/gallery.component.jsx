@@ -3,6 +3,7 @@ import GLightbox from "glightbox";
 
 import { useGalleryStyles } from "./gallery.styles";
 import { GalleryImage } from "../gallery-image/gallery-image.component";
+import { getImage } from "gatsby-plugin-image";
 
 export const Gallery = ({ images }) => {
   const classes = useGalleryStyles();
@@ -10,10 +11,11 @@ export const Gallery = ({ images }) => {
   const parsedImages = images
     .map((image) => {
       const src = image.node.publicURL;
+      const img = getImage(image.node);
       const title = image.node.name.replaceAll("_", " ");
       const year = image.node.dir.substr(image.node.dir.lastIndexOf("/") + 1);
 
-      return { src, title, year };
+      return { src, img, title, year };
     })
     .sort((a, b) => b.year - a.year);
 
@@ -31,6 +33,7 @@ export const Gallery = ({ images }) => {
         <div key={i} className={classes.galleryItem}>
           <GalleryImage
             src={image.src}
+            img={image.img}
             title={image.title}
             year={image.year}
             onView={() => handleViewImage(i)}

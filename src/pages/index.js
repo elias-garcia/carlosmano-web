@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 import SEO from "../components/shared/seo/seo.component";
 
@@ -6,7 +7,12 @@ const IndexPage = () => {
   return (
     <>
       <SEO />
-      <p>Inicio</p>
+      <StaticImage
+        src="../images/hero.jpg"
+        alt="Cuadro de portada"
+        loading="eager"
+        placeholder="none"
+      />
     </>
   );
 };
