@@ -17,8 +17,8 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     justifyContent: "space-between",
   },
   logo: {
-    fontSize: 28,
-    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacing * 3.5,
+    fontWeight: theme.fontWeights.bold,
     margin: 0,
     "& a": {
       textDecoration: "none",
