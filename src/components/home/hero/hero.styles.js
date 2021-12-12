@@ -35,7 +35,7 @@ export const useHeroStyles = createUseStyles((theme) => ({
     textDecoration: "none",
     border: `${theme.spacing * 0.5}px solid ${theme.palette.white}`,
     borderRadius: theme.spacing * 0.5,
-    padding: `${theme.spacing * 2}px ${theme.spacing * 4}px`,
+    padding: `${theme.spacing * 1.75}px ${theme.spacing * 3}px`,
     color: theme.palette.white,
     background: "transparent",
     cursor: "pointer",
@@ -47,9 +47,11 @@ export const useHeroStyles = createUseStyles((theme) => ({
   },
   buttonText: {
     margin: 0,
+    fontSize: theme.spacing * 2.5,
+    fontWeight: theme.fontWeights.medium,
   },
   arrowRightIcon: {
-    height: theme.spacing * 4,
+    height: theme.spacing * 3,
     marginLeft: theme.spacing * 2.5,
   },
 }));

@@ -41,6 +41,8 @@ export const useHeaderStyles = createUseStyles((theme) => ({
     display: "flex",
   },
   routeLink: {
+    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacing * 2.5,
     padding: `${theme.spacing}px ${theme.spacing * 2}px`,
     textTransform: "capitalize",
     textDecoration: "none",
